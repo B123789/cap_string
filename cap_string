@@ -1,0 +1,18 @@
+# -*- coding:UTF-8 -*-
+
+'''
+给定一个只有字母空格的字符串，将所有单词变成有且只有首写字母大写
+'''
+
+def cap_string(str):
+	new_str = ' '
+	i = 0
+	while i < len(str):
+		if (i == 0) or (str[i-1] == ' '):
+			new_str += str[i].upper()
+		else:
+			new_str += str[i]
+		i += 1
+	print new_str
+
+cap_string('abc efg thj.')
